@@ -10,6 +10,21 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+function calcLosuly(kerulet, hossz) {
+  let losulya = kerulet*kerulet*hossz/11877;
+  
+  return losulya;
+}
+export default function App() {
+  const [hossz, setHossz] = useState('');
+  const [kerulet, setKerulet] = useState('');
+}
+  
+  function startCalculation() {
+    let radius = calcRadius(kerulet, hossz);
+    setsuly(losulya);
+  }
+
 export default function App() {
   return (
     <View style={styles.container}>
